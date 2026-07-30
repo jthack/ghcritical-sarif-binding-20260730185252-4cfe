@@ -32,7 +32,7 @@
           "ruleId": "GHCRITICAL-INERT-REF-BINDING",
           "level": "warning",
           "message": {
-            "text": "GHCRITICAL_OWNED_PR_CONTROL"
+            "text": "GHCRITICAL_OWNED_PR_CONTROL_20260730190402-4ac2"
           },
           "locations": [
             {
