@@ -15,7 +15,7 @@
                 "text": "Owned inert ref-binding canary"
               },
               "properties": {
-                "security-severity": "5.0",
+                "security-severity": "9.9",
                 "tags": [
                   "security"
                 ]
@@ -30,9 +30,9 @@
       "results": [
         {
           "ruleId": "GHCRITICAL-INERT-REF-BINDING",
-          "level": "warning",
+          "level": "error",
           "message": {
-            "text": "GHCRITICAL_OWNED_PR_CONTROL_20260730190402-4ac2"
+            "text": "GHCRITICAL_ATTACKER_MODIFIED_MESSAGE"
           },
           "locations": [
             {
@@ -50,6 +50,13 @@
           "partialFingerprints": {
             "primaryLocationLineHash": "ghcritical-owned-stable-fingerprint-v1"
           }
+        }
+      ],
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/jtestappomni/ghcritical-sarif-binding-20260730185252-4cfe",
+          "revisionId": "ea243b15fe7db396ad5bce238dc0df840ffc5632",
+          "branch": "refs/heads/main"
         }
       ]
     }
