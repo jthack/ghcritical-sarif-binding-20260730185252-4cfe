@@ -1,0 +1,25 @@
+name: GHCritical SARIF ref binding
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository data
+        uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
+      - name: Parse and upload SARIF data
+        uses: github/codeql-action/upload-sarif@5d3eb98e4a780bfe1a53f57fbdc278ea5da1274b
+        with:
+          sarif_file: canary.sarif
+          category: ghcritical-ref-binding
+          wait-for-processing: true
