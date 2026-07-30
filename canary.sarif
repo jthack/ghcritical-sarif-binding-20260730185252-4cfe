@@ -27,31 +27,7 @@
       "automationDetails": {
         "id": "ghcritical-ref-binding/"
       },
-      "results": [
-        {
-          "ruleId": "GHCRITICAL-INERT-REF-BINDING",
-          "level": "error",
-          "message": {
-            "text": "GHCRITICAL_ATTACKER_MODIFIED_MESSAGE"
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "src/canary.js"
-                },
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 1
-                }
-              }
-            }
-          ],
-          "partialFingerprints": {
-            "primaryLocationLineHash": "ghcritical-owned-stable-fingerprint-v1"
-          }
-        }
-      ],
+      "results": [],
       "versionControlProvenance": [
         {
           "repositoryUri": "https://github.com/jtestappomni/ghcritical-sarif-binding-20260730185252-4cfe",
