@@ -1,0 +1,57 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "GHCritical Inert SARIF Scanner",
+          "semanticVersion": "1.0.0",
+          "rules": [
+            {
+              "id": "GHCRITICAL-INERT-REF-BINDING",
+              "name": "GHCriticalInertRefBinding",
+              "shortDescription": {
+                "text": "Owned inert ref-binding canary"
+              },
+              "properties": {
+                "security-severity": "5.0",
+                "tags": [
+                  "security"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "automationDetails": {
+        "id": "ghcritical-ref-binding/"
+      },
+      "results": [
+        {
+          "ruleId": "GHCRITICAL-INERT-REF-BINDING",
+          "level": "warning",
+          "message": {
+            "text": "GHCRITICAL_OWNED_BASELINE_CANARY"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/canary.js"
+                },
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "primaryLocationLineHash": "ghcritical-owned-stable-fingerprint-v1"
+          }
+        }
+      ]
+    }
+  ]
+}
